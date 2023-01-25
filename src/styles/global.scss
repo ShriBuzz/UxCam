@@ -24,6 +24,10 @@
   .roboto {
     font-family: 'Roboto', sans-serif;
   }
+
+  .survey-container {
+    @apply w-full h-full flex-center flex-col text-primary-midnight text-center;
+  }
 }
 
 @layer base {

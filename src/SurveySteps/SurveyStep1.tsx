@@ -10,7 +10,7 @@ const SurveyStep1: React.FC = () => {
   const { title, subtitle, article } = SurveyStep1Const;
 
   return (
-    <div className='w-full h-full flex-center flex-col text-primary-midnight text-center'>
+    <div className='survey-container'>
       <h1 className='h1 mb-6 max-w-[800px] mt-4'>{title}</h1>
 
       <p className='roboto text-lg'>{article}</p>
