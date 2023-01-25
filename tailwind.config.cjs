@@ -9,6 +9,7 @@ module.exports = {
         'primary-cloud': 'var(--primary-cloud)',
         'primary-snow': 'var(--primary-snow)',
         'primary-shadow': 'var(--primary-shadow)',
+        'primary-fog': 'var(--primary-fog)',
       },
 
       fontSize: {
