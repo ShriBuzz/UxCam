@@ -82,7 +82,7 @@ const CheckboxItemWithLabel: React.FC<CheckboxProps> = (props) => {
       />
       <label
         htmlFor={id}
-        className={`w-4 h-4 border border-primary-shadow peer-checked:border-primary-sky peer-checked:bg-primary-sky
+        className={`w-4 h-4 border border-primary-shadow peer-checked:border-primary-sky peer-checked:bg-primary-sky cursor-pointer
         peer-focus-visible:ring-2
         `}
       />
