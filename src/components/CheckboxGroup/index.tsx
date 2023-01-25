@@ -49,7 +49,7 @@ const CheckboxItem: React.FC<CheckboxProps> = (props) => {
         {...inputProps}
         id={id}
         ref={ref}
-        className={`peer w-0 h-0 opacity-0`}
+        className={`peer w-0 h-0 opacity-0 absolute`}
       />
       <label
         htmlFor={id}
@@ -78,7 +78,7 @@ const CheckboxItemWithLabel: React.FC<CheckboxProps> = (props) => {
         {...inputProps}
         id={id}
         ref={ref}
-        className={`peer w-0 h-0 opacity-0`}
+        className={`peer w-0 h-0 opacity-0 absolute`}
       />
       <label
         htmlFor={id}
