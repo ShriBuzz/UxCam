@@ -5,3 +5,21 @@
 @import './fonts.scss';
 @import './generic.scss';
 @import './variables.scss';
+
+@layer components {
+  .h1 {
+    @apply text-h1 font-semibold;
+    line-height: 4rem;
+  }
+
+  .h2 {
+    @apply text-h2 font-semibold;
+    line-height: 3.25rem;
+  }
+}
+
+@layer base {
+  html {
+    font-family: 'Poppins', sans-serif;
+  }
+}
