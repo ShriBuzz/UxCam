@@ -20,6 +20,10 @@
   .flex-center {
     @apply flex justify-center items-center;
   }
+
+  .roboto {
+    font-family: 'Roboto', sans-serif;
+  }
 }
 
 @layer base {
