@@ -13,7 +13,7 @@ const SurveyStep1: React.FC = () => {
     <div className='w-full h-full flex-center flex-col text-primary-midnight text-center'>
       <h1 className='h1 mb-6 max-w-[800px] mt-4'>{title}</h1>
 
-      <p className='roboto'>{article}</p>
+      <p className='roboto text-lg'>{article}</p>
 
       <p className='text-h3 font-semibold text-primary-sky mt-12 mb-16 max-w-[900px]'>
         {subtitle}
