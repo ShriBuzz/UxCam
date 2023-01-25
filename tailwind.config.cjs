@@ -11,13 +11,9 @@ module.exports = {
       },
 
       fontSize: {
-        h1: 'var(--h1)',
-        h2: 'var(--h2)',
-        h3: 'var(--h3)',
-        lg: 'var(--lg)',
-        md: 'var(--md)',
-        sm: 'var(--sm)',
-        xs: 'var(--xs)',
+        h1: 'var(--font-size-h1)',
+        h2: 'var(--font-size-h2)',
+        h3: 'var(--font-size-h3)',
       },
     },
   },
