@@ -1,13 +1,12 @@
 import React from 'react';
 
 // components
-import Button from '@/components/Button';
 import AppCardLayout from '@/components/AppCardLayout';
 import FooterButtonGroup from '@/components/FooterButtonGroup';
 import { RadioGroup, RadioItem } from '@/components/RadioGroup';
 
 // const
-import { SurveyStep2Const, ButtonText } from '@/const/eng';
+import { SurveyStep2Const } from '@/const/eng';
 
 const SurveyStep2: React.FC = () => {
   const { title, radioOptions } = SurveyStep2Const;

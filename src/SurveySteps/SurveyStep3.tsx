@@ -1,13 +1,12 @@
 import React from 'react';
 
 // components
-import Button from '@/components/Button';
 import AppCardLayout from '@/components/AppCardLayout';
 import FooterButtonGroup from '@/components/FooterButtonGroup';
 import { CheckboxGroup, CheckboxItem } from '@/components/CheckboxGroup';
 
 // const
-import { SurveyStep3Const, ButtonText } from '@/const/eng';
+import { SurveyStep3Const } from '@/const/eng';
 
 const SurveyStep3: React.FC = () => {
   const { title, checkboxOptions } = SurveyStep3Const;
