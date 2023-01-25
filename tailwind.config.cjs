@@ -10,6 +10,7 @@ module.exports = {
         'primary-snow': 'var(--primary-snow)',
         'primary-shadow': 'var(--primary-shadow)',
         'primary-fog': 'var(--primary-fog)',
+        'primary-grey': 'var(--grey)',
       },
 
       fontSize: {
