@@ -37,50 +37,138 @@ const SurveyStep3Const = {
       label: 'iOS',
       value: 'ios',
       icon: iosIcon,
-    }, {
+    },
+    {
       label: 'Android',
       value: 'android',
       icon: androidIcon,
-    }, {
+    },
+    {
       label: 'Ionic',
       value: 'ionic',
-    }, {
+    },
+    {
       label: 'Cordova',
       value: 'cordova',
       icon: cordovaIcon,
-    }, {
+    },
+    {
       label: 'Flutter',
       value: 'flutter',
       icon: flutterIcon,
-    }, {
+    },
+    {
       label: 'Unity',
       value: 'unity',
-    }, {
+    },
+    {
       label: 'React Native',
       value: 'react-native',
       icon: reactIcon,
-    }, {
+    },
+    {
       label: 'Xamarin',
       value: 'xamarin',
       icon: xamarinIcon,
-    }, {
+    },
+    {
       label: 'Xamarin.forms',
       value: 'xamarin-forms',
-    }, {
+    },
+    {
       label: 'Expo',
       value: 'expo',
       icon: iosIcon,
-    }, {
+    },
+    {
       label: 'NativeScript',
       value: 'native-script',
       icon: nativeIcon,
-    }, {
+    },
+    {
       label: 'Other',
       value: 'other',
       icon: androidIcon,
-    }
+    },
   ],
-}
+};
+
+const SurveyStep5Const = {
+  title: 'What analytics tools are you currently using with your app?',
+  article: 'Please select all that apply',
+  checkboxOptions: [
+    {
+      label: 'Google Analytics',
+      value: 'google-analytics',
+      icon: iosIcon,
+    },
+    {
+      label: 'Firebase',
+      value: 'firebase',
+      icon: androidIcon,
+    },
+    {
+      label: 'Adobe',
+      value: 'adobe',
+    },
+    {
+      label: 'Mixpanel',
+      value: 'mixpanel',
+      icon: iosIcon,
+    },
+    {
+      label: 'Amplitude',
+      value: 'amplitude',
+      icon: androidIcon,
+    },
+    {
+      label: 'Clever Tap',
+      value: 'clever-tap',
+    },
+    {
+      label: 'Segment',
+      value: 'segment',
+      icon: iosIcon,
+    },
+    {
+      label: 'Instabug',
+      value: 'instabug',
+      icon: androidIcon,
+    },
+    {
+      label: 'Appsflyer',
+      value: 'appsflyer',
+    },
+    {
+      label: 'Branch',
+      value: 'branch',
+      icon: iosIcon,
+    },
+    {
+      label: 'Adjust',
+      value: 'adjust',
+      icon: androidIcon,
+    },
+    {
+      label: 'Sentry',
+      value: 'sentry',
+    },
+    {
+      label: 'Flurry',
+      value: 'flurry',
+      icon: iosIcon,
+    },
+    {
+      label: 'Others',
+      value: 'others',
+      icon: androidIcon,
+    },
+    {
+      label: 'No Analytics',
+      value: 'no-analytics',
+    },
+  ],
+};
 
 const ButtonText = {
   continue: 'Continue',
@@ -88,4 +176,10 @@ const ButtonText = {
   submit: 'Submit survey',
 };
 
-export { SurveyStep1Const, SurveyStep2Const, SurveyStep3Const, ButtonText };
+export {
+  ButtonText,
+  SurveyStep1Const,
+  SurveyStep2Const,
+  SurveyStep3Const,
+  SurveyStep5Const,
+};
