@@ -40,11 +40,17 @@ const RadioItem: React.FC<RadioProps> = (props) => {
 
   return (
     <>
-      <input {...inputProps} id={id} ref={ref} className={`peer opacity-0`} />
+      <input
+        {...inputProps}
+        id={id}
+        ref={ref}
+        className={`peer w-0 h-0 opacity-0`}
+      />
       <label
         htmlFor={id}
         className={`w-[320px] h-[120px] bg-primary-snow flex flex-row gap-4 border-2 cursor-pointer
         ${isChecked ? 'border-primary-sky' : 'border-transparent'}
+        peer-focus-visible:ring-2
         ${props.containerStyles}
         `}
       >
