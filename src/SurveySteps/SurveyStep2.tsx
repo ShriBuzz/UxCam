@@ -3,6 +3,7 @@ import React from 'react';
 // components
 import Button from '@/components/Button';
 import AppCardLayout from '@/components/AppCardLayout';
+import FooterButtonGroup from '@/components/FooterButtonGroup';
 import { RadioGroup, RadioItem } from '@/components/RadioGroup';
 
 // const
@@ -23,10 +24,7 @@ const SurveyStep2: React.FC = () => {
         ))}
       </RadioGroup>
 
-      <div className='w-full max-w-[700px] flex justify-between items-center mt-11 px-[6px]'>
-        <Button title={ButtonText.back} size='small' variant='outline' />
-        <Button title={ButtonText.continue} size='small' />
-      </div>
+      <FooterButtonGroup containerStyles='mt-11' />
     </div>
   );
 };
