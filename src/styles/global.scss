@@ -16,6 +16,10 @@
     @apply text-h2 font-semibold;
     line-height: 3.25rem;
   }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
 }
 
 @layer base {
