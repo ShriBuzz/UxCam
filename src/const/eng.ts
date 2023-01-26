@@ -6,6 +6,23 @@ import flutterIcon from '@/assets/icons/flutter.png';
 import reactIcon from '@/assets/icons/react.png';
 import xamarinIcon from '@/assets/icons/xamarin.png';
 import nativeIcon from '@/assets/icons/native.png';
+import ionicIcon from '@/assets/icons/ionic.png';
+import unityIcon from '@/assets/icons/unity.png';
+
+// analytics icons
+import googleIcon from '@/assets/analytics/google-analytics.png';
+import firebaseIcon from '@/assets/analytics/firebase.png';
+import adobeIcon from '@/assets/analytics/adobe.png';
+import mixpanelIcon from '@/assets/analytics/mixpanel.png';
+import amplitudeIcon from '@/assets/analytics/amplitude.png';
+import cleverTapIcon from '@/assets/analytics/clevertap.webp';
+import segmentIcon from '@/assets/analytics/segment.png';
+import instabugIcon from '@/assets/analytics/instabug.png';
+import appsflyerIcon from '@/assets/analytics/appsflyer.png';
+import branchIcon from '@/assets/analytics/branch.png';
+import adjustIcon from '@/assets/analytics/adjust.png';
+import sentryIcon from '@/assets/analytics/sentry.png';
+import flurryIcon from '@/assets/analytics/flurry.png';
 
 const SurveyStep1Const = {
   title: 'Thank you for requesting a UXCam quote.',
@@ -46,6 +63,7 @@ const SurveyStep3Const = {
     {
       label: 'Ionic',
       value: 'ionic',
+      icon: ionicIcon,
     },
     {
       label: 'Cordova',
@@ -60,6 +78,7 @@ const SurveyStep3Const = {
     {
       label: 'Unity',
       value: 'unity',
+      icon: unityIcon,
     },
     {
       label: 'React Native',
@@ -74,6 +93,7 @@ const SurveyStep3Const = {
     {
       label: 'Xamarin.forms',
       value: 'xamarin-forms',
+      icon: xamarinIcon,
     },
     {
       label: 'Expo',
@@ -120,63 +140,67 @@ const SurveyStep5Const = {
     {
       label: 'Google Analytics',
       value: 'google-analytics',
-      icon: iosIcon,
+      icon: googleIcon,
     },
     {
       label: 'Firebase',
       value: 'firebase',
-      icon: androidIcon,
+      icon: firebaseIcon,
     },
     {
       label: 'Adobe',
       value: 'adobe',
+      icon: adobeIcon,
     },
     {
       label: 'Mixpanel',
       value: 'mixpanel',
-      icon: iosIcon,
+      icon: mixpanelIcon,
     },
     {
       label: 'Amplitude',
       value: 'amplitude',
-      icon: androidIcon,
+      icon: amplitudeIcon,
     },
     {
       label: 'Clever Tap',
       value: 'clever-tap',
+      icon: cleverTapIcon,
     },
     {
       label: 'Segment',
       value: 'segment',
-      icon: iosIcon,
+      icon: segmentIcon,
     },
     {
       label: 'Instabug',
       value: 'instabug',
-      icon: androidIcon,
+      icon: instabugIcon,
     },
     {
       label: 'Appsflyer',
       value: 'appsflyer',
+      icon: appsflyerIcon,
     },
     {
       label: 'Branch',
       value: 'branch',
-      icon: iosIcon,
+      icon: branchIcon,
     },
     {
       label: 'Adjust',
       value: 'adjust',
-      icon: androidIcon,
+      icon: adjustIcon,
     },
     {
       label: 'Sentry',
       value: 'sentry',
+      icon: sentryIcon,
     },
     {
       label: 'Flurry',
       value: 'flurry',
-      icon: iosIcon,
+      icon: flurryIcon,
     },
     {
       label: 'Others',
