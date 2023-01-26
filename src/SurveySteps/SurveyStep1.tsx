@@ -15,9 +15,9 @@ const SurveyStep1: React.FC = () => {
       title={title}
       subtitle={article}
       titleStyles='max-w-[800px] mt-4'
-      subtitleStyles='text-primary-midnight'
+      subtitleStyles='!text-primary-midnight'
     >
-      <p className='text-h3 font-semibold text-primary-sky mt-12 mb-16 max-w-[900px]'>
+      <p className='text-h3 leading-[42px] font-semibold text-primary-sky mt-12 mb-16 max-w-[900px]'>
         {subtitle}
       </p>
 
