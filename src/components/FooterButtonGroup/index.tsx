@@ -13,6 +13,7 @@ const FooterButtonGroup: React.FC<TFooterButtonGroup> = ({
   onContinue,
   onBack,
   containerStyles,
+  disabled,
 }) => {
   return (
     <div
@@ -26,7 +27,12 @@ const FooterButtonGroup: React.FC<TFooterButtonGroup> = ({
         variant='outline'
         onClick={onBack}
       />
-      <Button title={ButtonText.continue} size='small' onClick={onContinue} />
+      <Button
+        title={ButtonText.continue}
+        size='small'
+        onClick={onContinue}
+        disabled={disabled}
+      />
     </div>
   );
 };
