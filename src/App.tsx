@@ -34,18 +34,20 @@ function App() {
 
   const MemoizedProgressBar = useMemo(() => {
     return (
-      <ProgressBar
-        currentStep={wizard.stepIndex()}
-        // -2 because we don't want to count the intro and end steps
-        totalSteps={wizard.wizardLength() - 2}
-      />
+      <span className='absolute top-0 w-full'>
+        <ProgressBar
+          currentStep={wizard.stepIndex()}
+          // -2 because we don't want to count the intro and end steps
+          totalSteps={wizard.wizardLength() - 2}
+        />
+      </span>
     );
   }, [wizard.stepIndex()]);
 
   return (
-    <main className='w-screen min-h-screen bg-primary-cloud'>
+    <main className='bg-primary-cloud'>
       {wizard.stepIndex() > 0 && MemoizedProgressBar}
-      <div className='w-full pt-[180px] overflow-x-hidden'>
+      <div className='w-full h-screen pt-[180px] overflow-x-hidden'>
         <header className='container h-max flex-center flex-col gap-9 mx-auto'>
           <Logo />
           {wizard.stepIndex() > 0 &&
