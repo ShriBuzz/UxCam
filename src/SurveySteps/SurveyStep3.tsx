@@ -2,6 +2,7 @@ import React from 'react';
 
 // components
 import AppCardLayout from '@/components/AppCardLayout';
+import HeaderWrapper from '@/components/HeaderWrapper';
 import FooterButtonGroup from '@/components/FooterButtonGroup';
 import { CheckboxGroup, CheckboxItem } from '@/components/CheckboxGroup';
 
@@ -12,10 +13,8 @@ const SurveyStep3: React.FC = () => {
   const { title, checkboxOptions } = SurveyStep3Const;
 
   return (
-    <div className='survey-container'>
-      <h2 className='h2 mb-12 max-w-[592px]'>{title}</h2>
-
-      <CheckboxGroup className='max-w-[1056px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-9'>
+    <HeaderWrapper title={title} titleStyles='max-w-[592px]'>
+      <CheckboxGroup className='max-w-[1056px] mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-9'>
         {checkboxOptions.map((option, index) => (
           <CheckboxItem
             key={`framework-${index}`}
@@ -32,7 +31,7 @@ const SurveyStep3: React.FC = () => {
       </CheckboxGroup>
 
       <FooterButtonGroup />
-    </div>
+    </HeaderWrapper>
   );
 };
 
