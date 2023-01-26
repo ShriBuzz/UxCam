@@ -3,5 +3,6 @@ export type THeaderWrapper = {
   subtitle?: string;
   titleStyles?: string;
   subtitleStyles?: string;
+  containerStyles?: string;
   children?: React.ReactNode;
 };

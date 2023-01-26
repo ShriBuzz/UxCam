@@ -9,9 +9,10 @@ const HeaderWrapper: React.FC<THeaderWrapper> = ({
   children,
   titleStyles,
   subtitleStyles,
+  containerStyles,
 }) => {
   return (
-    <div className='survey-container'>
+    <div className={`survey-container ${containerStyles}`}>
       <h2 className={`h2 max-w-[720px] ${titleStyles}`}>{title}</h2>
 
       {subtitle && (
