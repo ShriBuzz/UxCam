@@ -49,7 +49,7 @@ const CheckboxItem: React.FC<CheckboxProps> = (props) => {
         {...inputProps}
         id={id}
         ref={ref}
-        className={`peer w-0 h-0 opacity-0`}
+        className={`peer w-0 h-0 opacity-0 absolute`}
       />
       <label
         htmlFor={id}
@@ -73,12 +73,12 @@ const CheckboxItemWithLabel: React.FC<CheckboxProps> = (props) => {
   const id = useId();
 
   return (
-    <span className={`flex flex-row items-center gap-6 ${containerStyles}`}>
+    <span className={`flex flex-row items-baseline gap-6 ${containerStyles}`}>
       <input
         {...inputProps}
         id={id}
         ref={ref}
-        className={`peer w-0 h-0 opacity-0`}
+        className={`peer w-0 h-0 opacity-0 absolute`}
       />
       <label
         htmlFor={id}
@@ -86,7 +86,12 @@ const CheckboxItemWithLabel: React.FC<CheckboxProps> = (props) => {
         peer-focus-visible:ring-2
         `}
       />
-      <label htmlFor={id}>{label}</label>
+      <label
+        htmlFor={id}
+        className='max-w-[289px] text-left roboto leading-6 text-primary-midnight'
+      >
+        {label}
+      </label>
     </span>
   );
 };

@@ -44,7 +44,7 @@ const RadioItem: React.FC<RadioProps> = (props) => {
         {...inputProps}
         id={id}
         ref={ref}
-        className={`peer w-0 h-0 opacity-0`}
+        className={`peer w-0 h-0 opacity-0 absolute`}
       />
       <label
         htmlFor={id}
