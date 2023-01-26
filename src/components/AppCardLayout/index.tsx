@@ -19,8 +19,12 @@ const AppCardLayout: React.FC<TAppCardLayout> = ({
       </span>
 
       <p
-        className={`flex-1 justify-start items-center font-semibold flex-center lg:break-all lg:max-w-[90%] xl:break-normal
-        ${titleSize === 'medium' ? 'text-2xl' : 'text-h3'}
+        className={`flex-1 text-left leading-6 justify-start items-center flex-center lg:break-all lg:max-w-[90%] xl:break-normal
+        ${
+          titleSize === 'medium'
+            ? 'text-2xl font-medium'
+            : 'text-h3 font-semibold'
+        }
       `}
       >
         {title}
