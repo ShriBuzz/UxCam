@@ -7,7 +7,10 @@ import HeaderWrapper from '@/components/HeaderWrapper';
 // const
 import { SurveyStep1Const, ButtonText } from '@/const/eng';
 
-const SurveyStep1: React.FC = () => {
+// types
+import { TWizardProps } from './types';
+
+const SurveyStep1: React.FC<TWizardProps> = (props) => {
   const { title, subtitle, article } = SurveyStep1Const;
 
   return (
@@ -21,7 +24,11 @@ const SurveyStep1: React.FC = () => {
         {subtitle}
       </p>
 
-      <Button title={ButtonText.continue} size='large' />
+      <Button
+        title={ButtonText.continue}
+        size='large'
+        onClick={() => props.wizard.nextStep()}
+      />
     </HeaderWrapper>
   );
 };
