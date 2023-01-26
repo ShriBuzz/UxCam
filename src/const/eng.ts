@@ -93,6 +93,26 @@ const SurveyStep3Const = {
   ],
 };
 
+const SurveyStep4Const = {
+  title: 'How many monthly sessions does each app receive?',
+  article:
+    'A session is every time a user opens the app, uses it, and when they put the app into the background, the session ends.',
+  radioOptions: [
+    {
+      label: '01-49',
+      value: '01-49',
+    },
+    {
+      label: '50-100',
+      value: '50-100',
+    },
+    {
+      label: '101-200',
+      value: '101-200',
+    },
+  ],
+};
+
 const SurveyStep5Const = {
   title: 'What analytics tools are you currently using with your app?',
   article: 'Please select all that apply',
@@ -181,5 +201,6 @@ export {
   SurveyStep1Const,
   SurveyStep2Const,
   SurveyStep3Const,
+  SurveyStep4Const,
   SurveyStep5Const,
 };
