@@ -6,7 +6,10 @@ import HeaderWrapper from '@/components/HeaderWrapper';
 // const
 import { SurveyStep9Const } from '@/const/eng';
 
-const SurveyStep9 = () => {
+// types
+import { TWizardProps } from './types';
+
+const SurveyStep9: React.FC<TWizardProps> = () => {
   return (
     <HeaderWrapper
       title={SurveyStep9Const.title}
