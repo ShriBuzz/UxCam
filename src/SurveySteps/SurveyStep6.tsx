@@ -52,11 +52,16 @@ const SurveyStep6: React.FC<TWizardProps> = (props) => {
           if (props.form.appLink) {
             if (isValidUrl(props.form.appLink)) {
               props.wizard.nextStep();
+              return;
             } else {
               alert('Please enter a valid link.');
               return;
             }
           }
+          props.dispatchForm({
+            type: UPDATE_KEY_VALUE,
+            value: { appLink: '' },
+          });
           props.wizard.nextStep();
         }}
       />

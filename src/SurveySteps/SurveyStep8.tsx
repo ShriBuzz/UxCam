@@ -47,7 +47,7 @@ const SurveyStep8: React.FC<TWizardProps> = (props) => {
         size='large'
         onClick={() => {
           if (ValidateEmail(props.form.email)) {
-            console.log('submit', props.form);
+            console.log('submit', JSON.stringify(props.form, null, 2));
             props.wizard.nextStep();
           }
         }}
