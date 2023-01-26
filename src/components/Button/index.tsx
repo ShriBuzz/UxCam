@@ -4,7 +4,7 @@ import React from 'react';
 import { TButton } from './types';
 
 const Button: React.FC<TButton> = (props) => {
-  const { size, title, variant, ...restProps } = props;
+  const { size, title, variant, disabled, ...restProps } = props;
 
   function getButtonSizeStyles() {
     switch (size) {
@@ -31,9 +31,11 @@ const Button: React.FC<TButton> = (props) => {
   return (
     <button
       className={`rounded-full font-medium transition-all duration-300 ease-in-out
+        disabled:opacity-50 disabled:cursor-default
         ${getButtonSizeStyles()}
         ${getButtonVariantStyles()}
     `}
+      disabled={disabled}
       {...restProps}
     >
       <p className='min-h-[28px] flex justify-center items-center'>{title}</p>
