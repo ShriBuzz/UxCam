@@ -1,0 +1,4 @@
+const RESET = 'RESET';
+const UPDATE_KEY_VALUE = 'UPDATE_KEY_VALUE';
+
+export { RESET, UPDATE_KEY_VALUE };
