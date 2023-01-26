@@ -190,6 +190,13 @@ const SurveyStep5Const = {
   ],
 };
 
+const SurveyStep6Const = {
+  title: 'App links',
+  article:
+    'Please include a Google Play Store or App Store link to your app (if available)',
+  inputPlaceholder: 'Insert App link here',
+};
+
 const ButtonText = {
   continue: 'Continue',
   back: 'Back',
@@ -203,4 +210,5 @@ export {
   SurveyStep3Const,
   SurveyStep4Const,
   SurveyStep5Const,
+  SurveyStep6Const,
 };
