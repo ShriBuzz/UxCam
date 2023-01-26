@@ -14,8 +14,22 @@ import { SurveyStep6Const } from '@/const/eng';
 // types
 import { TWizardProps } from './types';
 
+const linkRegex = new RegExp(
+  'https?://(www.)?[-a-zA-Z0-9@:%._+~#=]{1,256}.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&//=]*)'
+);
+
 const SurveyStep6: React.FC<TWizardProps> = (props) => {
   const { title, article, inputPlaceholder } = SurveyStep6Const;
+
+  function isValidUrl(link: string) {
+    try {
+      new URL(link);
+      return true;
+    } catch (err) {
+      return false;
+    }
+  }
+
   return (
     <HeaderWrapper title={title} subtitle={article}>
       <div className='w-full mt-16'>
@@ -28,12 +42,23 @@ const SurveyStep6: React.FC<TWizardProps> = (props) => {
               value: { appLink: e.target.value },
             });
           }}
+          pattern='https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)'
         />
       </div>
 
       <FooterButtonGroup
         onBack={() => props.wizard.previousStep()}
-        onContinue={() => props.wizard.nextStep()}
+        onContinue={() => {
+          if (props.form.appLink) {
+            if (isValidUrl(props.form.appLink)) {
+              props.wizard.nextStep();
+            } else {
+              alert('Please enter a valid link.');
+              return;
+            }
+          }
+          props.wizard.nextStep();
+        }}
       />
     </HeaderWrapper>
   );
