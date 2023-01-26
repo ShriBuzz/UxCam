@@ -197,6 +197,56 @@ const SurveyStep6Const = {
   inputPlaceholder: 'Insert App link here',
 };
 
+const SurveyStep7Const = {
+  title: 'What areas of your app are you looking to improve with UXCam?',
+  article: 'Please select all that apply',
+  checkboxOptions: [
+    {
+      label: 'Improve overall UX',
+    },
+    {
+      label: 'Increase feature adoption',
+    },
+    {
+      label: 'Increase app retention',
+    },
+    {
+      label: 'Improve onboarding experience',
+    },
+    {
+      label: 'Increase key conversions',
+    },
+    {
+      label: 'Understand in-app user journeys',
+    },
+    {
+      label: 'Improve app store rating & NPS',
+    },
+    {
+      label: 'Incorporate UX feedback into product research and development',
+    },
+    {
+      label:
+        'Support Customer Success and Engineering teams in resolving bugs & crashes',
+    },
+    {
+      label: 'Other (please specify at the bottom of the form)',
+    },
+    {
+      label: 'Capture qualitative insights and understand why users drop-off',
+    },
+  ],
+};
+
+const SurveyStep8Const = {
+  title: 'Primary contact email',
+  inputPlaceholder: 'name@company.com',
+};
+
+const SurveyStep9Const = {
+  title: 'Thank you for completing our survey!',
+};
+
 const ButtonText = {
   continue: 'Continue',
   back: 'Back',
@@ -211,4 +261,7 @@ export {
   SurveyStep4Const,
   SurveyStep5Const,
   SurveyStep6Const,
+  SurveyStep7Const,
+  SurveyStep8Const,
+  SurveyStep9Const,
 };
