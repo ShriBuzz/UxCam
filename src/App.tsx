@@ -5,6 +5,7 @@ import { useWizard } from 'use-wizard';
 
 // components
 import Logo from '@/components/Logo';
+import ProgressBar from '@/components/ProgressBar';
 
 // steps
 import WizardSteps from '@/SurveySteps/WizardSteps';
@@ -14,7 +15,6 @@ import { SurveySteps } from '@/global/enum';
 
 // reducer
 import formReducer from '@/reducer';
-import ProgressBar from './components/ProgressBar';
 
 function App() {
   const [step, wizard] = useWizard([
